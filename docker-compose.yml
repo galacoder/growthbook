@@ -3,8 +3,8 @@ services:
   mongo:
     image: "mongo:latest"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=galacoder69
-      - MONGO_INITDB_ROOT_PASSWORD=Admin123456!
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
     volumes:
       - mongodata:/data/db
   growthbook:
