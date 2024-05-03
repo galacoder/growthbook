@@ -18,6 +18,7 @@ services:
       - MONGODB_URI=mongodb://root:password@mongo:27017/growthbook?authSource=admin
       - APP_ORIGIN=https://growth.sangletech.com
       - API_HOST=https://growth.sangletech.com
+      - JWT_SECRET=y5GkFw6Qu03xY78E5ABegZH92CaYKcyeO86uotXw2VSe-3SWSxjelIbmOSR7LL50LhcuYi5UY9YD0ZxDYkzvSg
     volumes:
       - uploads:/usr/local/src/app/packages/back-end/uploads
 volumes:
