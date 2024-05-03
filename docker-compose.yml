@@ -12,13 +12,12 @@ services:
     ports:
     - "4000:3000" # example: use 4000 instead of 3000 for the app
     - "4100:3100" # example: use 4100 instead of 3100 for the api
-    environment:
-    - APP_ORIGIN=http://217.15.168.205:4000
-    - API_HOST=http://217.15.168.205:4100
     depends_on:
       - mongo
     environment:
       - MONGODB_URI=mongodb://root:password@mongo:27017/growthbook?authSource=admin
+      - APP_ORIGIN=http://217.15.168.205:4000
+      - API_HOST=http://217.15.168.205:4100
     volumes:
       - uploads:/usr/local/src/app/packages/back-end/uploads
 volumes:
